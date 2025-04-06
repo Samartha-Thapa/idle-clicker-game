@@ -11,8 +11,8 @@ interface UpgradeItemProps {
   cookies: number
   onBuy: () => void
   canAfford: boolean
+  
 }
-
 export function UpgradeItem({ upgrade, cookies, onBuy, canAfford }: UpgradeItemProps) {
   const formatNumber = (num: number) => {
     if (num >= 1000000) {
